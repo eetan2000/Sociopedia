@@ -9,5 +9,9 @@
 - NodeJS for running the back end server
 
 ## App Tour
+<img src="https://github.com/eetan2000/Sociopedia/blob/main/tour/Screenshot%20(382).png">
+<br>
+<img src="https://github.com/eetan2000/Sociopedia/blob/main/tour/Screenshot%20(383).png">
+<br>
 <img src="https://github.com/eetan2000/Sociopedia/blob/main/tour/Sociopedia.gif">
 <br>
