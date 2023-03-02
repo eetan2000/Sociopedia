@@ -1,0 +1,7 @@
+Like in SQL, we create schemas (look in models/User) using mongoose
+Mongoose is a MongoDB object modelling tool to work in an asynchronous environment
+
+By creating the schema, we can pass it into the mongoose.model which allows us to export that model
+and use functions.
+
+We then use the model in the appropriate controller

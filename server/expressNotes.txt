@@ -1,0 +1,39 @@
+~~Routing~~
+Routing determines how an application responds to a client request to a particular endpoint.
+Endpoints include a URI (path) and a specific HTTP request (CRUD)
+Route definition takes the following structure:
+
+app.METHOD(PATH, HANDLER)
+
+where 
+app is an instance of express
+METHOD is an HTTP CRUD method 
+PATH is a path on server
+HANDLER is the function executed when route is matched
+
+
+
+~~Static Files~~
+To serve static files, use express.static
+
+
+~~MiddleWare~~
+Express apps are essentially a series of 'middleware' calls
+Middleware functions have access to the request and response object (req, res) and the next middleware's
+function.
+Middleware can perform:
+    Execute code
+    Make changes to req,res
+    End the req,res cycle
+    Call the next middleware function in the stack
+
+To bind middleware, use app.use()
+This is has no mount path. So it will execute everytime an app receives a request
+
+        app.use((req, res, next) => {
+        console.log('Time:', Date.now())
+        next()
+        })
+
+
+
