@@ -64,10 +64,10 @@ const Navbar = () => {
                 </Typography>
                 {isNonMobileScreens && (
                     <FlexBetween backgroundColor="{neutralLight}" borderRadius="9px" gap="3rem" padding="0.1rem 1.5rem">
-                        <InputBase placeholder="Search..."/>
+                        {/**<InputBase placeholder="Search..."/>
                         <IconButton>
                             <Search />
-                        </IconButton>
+                        </IconButton>*/}
                     </FlexBetween>
                 )}
             </FlexBetween>
@@ -83,9 +83,13 @@ const Navbar = () => {
                     (<LightMode sx={{color: dark, fontsize: "25px"}}/>)
                     }
                 </IconButton>
-                <Message sx={{fontsize: "25px"}} />
-                <Notifications sx={{fontsize: "25px"}} />
-                <Help sx={{fontsize: "25px"}} />
+
+                {/**
+                 <Message sx={{fontsize: "25px"}} />
+                 <Notifications sx={{fontsize: "25px"}} />
+                 <Help sx={{fontsize: "25px"}} />
+                 */}
+
                 {/**For drop down on the top right */}
                 <FormControl variant="standard" value={fullName} >
                     <Select 
